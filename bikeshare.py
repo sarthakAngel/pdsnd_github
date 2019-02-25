@@ -170,15 +170,15 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        raw_data = input('Would you like to see five rows of data? (yes/no)').lower()
+        raw_data = input('Would you like to see seven rows of data? (yes/no)').lower()
         i = 0
         if(raw_data == 'yes'):
-                print(df[df.columns[0:-1]].iloc[i:i+5])
+                print(df[df.columns[0:-1]].iloc[i:i+7])
         while True:
-            i += 5
+            i += 7
             more_data = input('Would you like to see more data? (yes/no)').lower()
             if(more_data == 'yes'):
-                print(df[df.columns[0:-1]].iloc[i:i+5])
+                print(df[df.columns[0:-1]].iloc[i:i+7])
             elif(more_data == 'no'):
                 break
         restart = input('\nWould you like to restart? Enter yes or no.\n')
