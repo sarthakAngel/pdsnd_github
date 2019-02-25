@@ -18,11 +18,11 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-#get user input for city (chicago, new york city, washington). 
+#get user input for city (chicago, new york city, washington).
     error = 1 #Flag to keep asking if somthing is wrong
     city = ""
     while (error == 1):
-        city = input("Enter your city: ")
+        city = input("Enter your city (chicago,new york city or washington): ")
         if (city.lower() in CITY_DATA.keys()):#check if the city is a key of the dictionary
             error = 0
         else:
