@@ -25,7 +25,7 @@ def get_filters():
         if (city.lower() in CITY_DATA.keys()):#check if the city is a key of the dictionary
             error = 0
         else:
-            print("Invalid city")
+            print("Invalid name of city")
 #get user input for month (all, january, february, ... , june)
     error = 1
     month = ""
